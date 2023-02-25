@@ -1,5 +1,5 @@
 
-## A program to calculate the mean of a set of numbers stored in a Python list**
+## A program to calculate the mean of a set of numbers stored in a Python list
 
 Method 1 -> 
 Using 'mean'function in 'statistics' module in Python.
