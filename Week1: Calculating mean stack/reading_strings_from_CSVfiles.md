@@ -61,3 +61,14 @@
     ```
     
     * Most NumPy functions operate on the whole array at once (rather than individual items)
+
+
+- But… instead of going through all those steps, we can use `loadtxt` function in `NumPy` which,
+    - can automatically read a CSV file into a NumPy array
+    - Including, converting from string to numbers
+    
+    ```python
+    import numpy as np
+    data = np.loadtxt('data.csv', delimiter=',')
+    print(data)
+    ```
