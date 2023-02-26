@@ -1,4 +1,4 @@
-### In this, we are goin to calculate the mean with a NumPy array
+### In this, we are going to calculate the mean with a NumPy array
 
 - [NumPy](http://www.numpy.org/) arrays can store purely numerical data
     - in much less space,
