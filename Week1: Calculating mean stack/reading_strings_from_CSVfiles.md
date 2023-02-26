@@ -29,3 +29,35 @@
     - strip method → it removes whitespaces (+new lines) from the end of line
     - split method → it creates a list of strings using ‘,’ character as the separator between them.
     - Now we should remember that the above Python program returns a list of strings.
+
+
+- Since the `split`method returns a list of strings, so each value in each row is a string. We have to convert the values to floats before we can do any calculations with them.
+- To convert each item from a string to a float, we can use one of following ways,
+    - Using nested for loops,
+        
+        ```python
+        data = []
+        for line in open('data.csv'):
+          row = []
+          for col in line.strip().split(','):
+            row.append(float(col))
+          data.append(row)
+        
+        print(data)
+        ```
+        
+
+- Using `asarray` function in NumPy
+    
+    ```python
+    import numpy as np
+    
+    data = []
+    for line in open('data.csv'):
+      data.append(line.strip().split(','))
+    
+    data = np.asarray(data, float)
+    print(data)
+    ```
+    
+    * Most NumPy functions operate on the whole array at once (rather than individual items)
