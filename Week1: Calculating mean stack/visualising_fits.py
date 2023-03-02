@@ -1,13 +1,13 @@
 from astropy.io import fits
-'''The astropy.io.fits library provides functions for 
-reading and writing FITS files, which are a standard file format for storing astronomical data.'''
+"""The astropy.io.fits library provides functions for 
+reading and writing FITS files, which are a standard file format for storing astronomical data."""
 
 import matplotlib.pyplot as plt
 # matplotlib.pyplot library provides functions for creating data visualizations
 
 hdulist = fits.open('image0.fits')
-'''reads in a FITS file called 'image0.fits' 
-using the fits.open function from the astropy.io.fits library.
+"""reads in a FITS file called 'image0.fits' 
+using the fits.open function from the astropy.io.fits library."""
 
 data = hdulist[0].data
 '''The data from the FITS file is stored in a 2D array,
