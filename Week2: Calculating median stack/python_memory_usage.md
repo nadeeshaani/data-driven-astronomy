@@ -28,6 +28,6 @@
     
     Explanation:
     
-    - The memory used by the list **`c`**is not the sum of the sizes of **`a`**and **`b`**
-    - Firstly, there is overhead for the list itself (the empty list **`d`**is 32 bytes).
+    - The memory used by the list `c` is not the sum of the sizes of `a` and `b`
+    - Firstly, there is overhead for the list itself (the empty list `d` is 32 bytes).
     - Secondly, the list does not contain the objects themselves, but instead holds references to the other objects in memory.
